@@ -17,7 +17,7 @@ export function Services() {
 
         <div className="mt-16 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service, i) => {
-            const Icon = ICONS[i];
+            const Icon = ICONS[i] ?? Home;
             return (
               <Reveal key={service.number} delay={i * 90} className="h-full">
                 <article className="group relative flex h-full flex-col justify-between overflow-hidden bg-card p-8 transition-colors duration-500 hover:bg-secondary sm:p-10">
